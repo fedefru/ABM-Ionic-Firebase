@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-button>
+    <ion-title>Formulario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list lines="full">
+    <ion-item>
+      <ion-input required type="text" placeholder="Nombre" [(ngModel)]="form.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="text" placeholder="Apellido" [(ngModel)]="form.apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="text" placeholder="Email" [(ngModel)]="form.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="password" placeholder="Contraseña" [(ngModel)]="form.contrasenia"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveForm()">Guardar</ion-button>
+
+</ion-content>
